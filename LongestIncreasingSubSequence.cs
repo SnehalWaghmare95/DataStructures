@@ -28,6 +28,9 @@ public int LIS(int[] nums,int prev,int current){
   public int LISDynamicProgramming(int[] nums){
   
   int [] dp = new int[nums.Length+1];
+    for(int k=0;k<=nums.Legnth;k++){
+      dp[k] = 1;
+    }
   int max = 0;
     for(int i=1;i<nums.Length;i++){
       for(int j=0;j<i;j++){
